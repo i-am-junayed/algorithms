@@ -15,10 +15,10 @@ Bubble Sort works as follows:
 - Repeat this process for each element until no swaps are needed.
 Example:
 For the array **[5, 3, 8, 4, 2]**, the sorting process is:
-Pass 1: *[3, 5, 4, 2, 8]*
-Pass 2: *[3, 4, 2, 5, 8]*
-Pass 3: *[3, 2, 4, 5, 8]*
-Pass 4: *[2, 3, 4, 5, 8]* (Sorted)
+    - Pass 1: *[3, 5, 4, 2, 8]*
+    - Pass 2: *[3, 4, 2, 5, 8]*
+    - Pass 3: *[3, 2, 4, 5, 8]*
+    - Pass 4: *[2, 3, 4, 5, 8]* (Sorted)
 
 The largest element moves to its correct position in each pass, like bubbles rising to the surface.
 
