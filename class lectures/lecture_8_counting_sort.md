@@ -68,7 +68,7 @@ Before Sorting: [4, 2, 2, 8, 3, 3, 1]
 After Sorting: [1, 2, 2, 3, 3, 4, 8]
 
 ```
-
+---
 ## Time Complexity Analysis
 
 Counting Sort has a time complexity of **O(n + k)** in all cases, where **n** is the number of elements in the input array and **k** is the range of the input (the difference between the maximum and minimum values).
@@ -94,7 +94,6 @@ Counting Sort has a space complexity of **O(n + k)** because:
 - An output array of size **n** is used to store the sorted elements.
 
 ---
-
 ## Summary
 
 ✅ **Efficient for sorting small integers with a limited range.**  
@@ -102,4 +101,5 @@ Counting Sort has a space complexity of **O(n + k)** because:
 ✅ **Best suited for scenarios where the range of numbers (k) is not excessively large compared to n.**  
 
 ❌ **Not suitable for sorting large datasets with widely varying numbers due to high space complexity.**  
+❌ **Cannot sort floating-point numbers because it relies on integer indices.**  
 ✅ **Faster than comparison-based sorts for constrained input ranges but inefficient for general sorting tasks.**
