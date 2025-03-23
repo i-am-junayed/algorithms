@@ -6,37 +6,36 @@ Counting Sort is a non-comparison-based sorting algorithm that sorts elements by
 
 This documentation covers:
 
-Understanding the Counting Sort approach
+- Understanding the Counting Sort approach
+- Step-by-step sorting process
+- Time and Space Complexity analysis
 
-Step-by-step sorting process
+---
 
-Time and Space Complexity analysis
-
-Counting Sort Algorithm
+## Counting Sort Algorithm
 
 Counting Sort works as follows:
 
-Find the maximum element in the array.
+1. Find the maximum element in the array.
+2. Create a counting array to store the frequency of each element.
+3. Compute the cumulative sum of the count array.
+4. Place elements in their correct position in the output array based on the count array.
 
-Create a counting array to store the frequency of each element.
+---
 
-Compute the cumulative sum of the count array.
+## Example
 
-Place elements in their correct position in the output array based on the count array.
+For the array `[4, 2, 2, 8, 3, 3, 1]`, the sorting process is:
 
-Example
+1. Find max element: `8`
+2. Count occurrences: `[0, 1, 2, 2, 1, 0, 0, 0, 1]`
+3. Compute cumulative count: `[0, 1, 3, 5, 6, 6, 6, 6, 7]`
+4. Construct sorted array: `[1, 2, 2, 3, 3, 4, 8]`
 
-For the array [4, 2, 2, 8, 3, 3, 1], the sorting process is:
-
-Find max element: 8
-
-Count occurrences: [0, 1, 2, 2, 1, 0, 0, 0, 1]
-
-Compute cumulative count: [0, 1, 3, 5, 6, 6, 6, 6, 7]
-
-Construct sorted array: [1, 2, 2, 3, 3, 4, 8]
+---
 
 ## Implementation
+
 ```python
 def counting_sort(arr):
     if not arr:
@@ -60,58 +59,47 @@ def counting_sort(arr):
         count[num] -= 1
     
     return output
-```
-# Example
 arr = [4, 2, 2, 8, 3, 3, 1]
 print("Before Sorting:", arr)
 sorted_arr = counting_sort(arr)
 print("After Sorting:", sorted_arr)
 
-Time Complexity Analysis
+Before Sorting: [4, 2, 2, 8, 3, 3, 1]
+After Sorting: [1, 2, 2, 3, 3, 4, 8]
 
-Counting Sort has a time complexity of O(n + k), where n is the number of elements and k is the range of values.
+```
 
-Case
+## Time Complexity Analysis
 
-## Time Complexity
+Counting Sort has a time complexity of **O(n + k)** in all cases, where **n** is the number of elements in the input array and **k** is the range of the input (the difference between the maximum and minimum values).
 
-Explanation
+| Case | Time Complexity | Explanation |
+|------|------------------|-------------|
+| **Best Case** | O(n + k) | The algorithm always performs the same steps regardless of the input order. |
+| **Worst Case** | O(n + k) | Even if the input is in reverse order or random, the steps remain the same. |
+| **Average Case** | O(n + k) | The time complexity is linear and depends on the size of the input and the range of values. |
 
-Best Case
+---
 
-O(n + k)
-
-Every element is processed a constant number of times.
-
-Worst Case
-
-O(n + k)
-
-Performance depends on the range of values (k).
-
-Average Case
-
-O(n + k)
-
-Works efficiently if k is not significantly larger than n.
+### Explanation of Counting Sort Time Complexity:
+- **O(n)**: Counting the frequency of each element in the input array.
+- **O(k)**: Building the sorted output array by iterating over the range of values.
+- The overall time complexity is **O(n + k)** because both steps are necessary.
 
 ## Space Complexity Analysis
 
-Counting Sort has a space complexity of O(n + k) because:
+Counting Sort has a space complexity of **O(n + k)** because:
 
-It requires an auxiliary count array of size k + 1.
+- It requires an auxiliary count array of size **k + 1**.
+- An output array of size **n** is used to store the sorted elements.
 
-An output array of size n is used to store the sorted elements.
+---
 
 ## Summary
 
-✅ Efficient for sorting small integers with a limited range.
+✅ **Efficient for sorting small integers with a limited range.**  
+✅ **Stable sorting algorithm.**  
+✅ **Best suited for scenarios where the range of numbers (k) is not excessively large compared to n.**  
 
-✅ Stable sorting algorithm.
-
-✅ Best suited for scenarios where the range of numbers (k) is not excessively large compared to n.
-
-❌ Not suitable for sorting large datasets with widely varying numbers due to high space complexity.
-
-✅ Faster than comparison-based sorts for constrained input ranges but inefficient for general sorting tasks.
-
+❌ **Not suitable for sorting large datasets with widely varying numbers due to high space complexity.**  
+✅ **Faster than comparison-based sorts for constrained input ranges but inefficient for general sorting tasks.**
