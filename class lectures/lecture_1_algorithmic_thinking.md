@@ -23,15 +23,6 @@ Each solution includes:
 - Time/space complexity analysis
 - Performance comparisons
 - Clear guidelines for when to use each approach
-
-```mermaid
-graph TD
-    A[Problem] --> B[Brute Force Solution]
-    A --> C[Find Optimizations]
-    C --> D[Mathematical Insights]
-    C --> E[Better Data Structures]
-    D --> F[Optimized Solution]
-    E --> F
     
 ## Naive Approach (Inefficient)
 
@@ -106,6 +97,7 @@ print(is_prime(int(input("Enter a number: "))))
 ## Brute Force Approach (O(n²))
 Checks all possible pairs using nested loops.
 
+### Code: 
 ```python
 def find_duplicate_brute(lst, count=0):
     for i in range(len(lst)):
@@ -128,6 +120,7 @@ print(find_duplicate_brute(lst))  # (False, 49) for 7 elements (7×7 checks)
 # Optimized List Approach (O(n²))
 Uses a single loop but still O(n²) due to list searches.
 
+### Code:
 ```python
 def find_duplicate_list(lst, count=0):
     seen = []
@@ -146,6 +139,8 @@ def find_duplicate_list(lst, count=0):
 
 # Optimized Set Approach (O(n))
 Uses hash-based set for O(1) lookups.
+
+### Code:
 
 ```python
 def find_duplicate_set(lst, count=0):
