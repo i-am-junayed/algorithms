@@ -3,6 +3,7 @@
 ## Introduction
 
 This repository demonstrates how algorithmic thinking can transform naive solutions into efficient ones. We explore two classic problems:
+
 **Prime Number Checking**
 - Naive O(n) approach vs optimized O(√n) solution
 - How mathematical insight leads to better performance
