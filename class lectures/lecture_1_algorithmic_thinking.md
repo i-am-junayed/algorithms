@@ -13,13 +13,13 @@ This repository demonstrates how algorithmic thinking can transform naive soluti
 - Optimized O(n) solution using hash sets
 - The power of choosing proper data structures
 
-Through these examples, you'll learn:
+**Through these examples, you'll learn:**
 - How to analyze time complexity
 - When to trade space for speed
 - Techniques for optimizing algorithms
 - Why theoretical foundations matter in practice
   
-Each solution includes:
+**Each solution includes:**
 - Working Python implementations
 - Time/space complexity analysis
 - Performance comparisons
