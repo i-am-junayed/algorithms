@@ -185,6 +185,7 @@ Always use the square root method - it's dramatically faster for large numbers w
 
 **For duplicate detection:**
 The set-based solution wins every time. While the brute force and list methods help understand the problem, they're impractical for real-world use.
+
 **Golden rule:**
 - Always analyze your problem before coding
 - Look for mathematical insights
