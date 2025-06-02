@@ -2,8 +2,36 @@
 
 ## Introduction
 
-This repository demonstrates two different approaches to checking whether a number is prime. The first approach is a naive method, and the second one is an optimized method using the square root technique to improve efficiency.
+This repository demonstrates how algorithmic thinking can transform naive solutions into efficient ones. We explore two classic problems:
+**Prime Number Checking**
+- Naive O(n) approach vs optimized O(√n) solution
+- How mathematical insight leads to better performance
+  
+**Duplicate Detection**
+- Brute force O(n²) nested loops
+- Optimized O(n) solution using hash sets
+- The power of choosing proper data structures
 
+Through these examples, you'll learn:
+- How to analyze time complexity
+- When to trade space for speed
+- Techniques for optimizing algorithms
+- Why theoretical foundations matter in practice
+  
+Each solution includes:
+- Working Python implementations
+- Time/space complexity analysis
+- Performance comparisons
+- Clear guidelines for when to use each approach
+
+graph TD
+    A[Problem] --> B[Brute Force Solution]
+    A --> C[Find Optimizations]
+    C --> D[Mathematical Insights]
+    C --> E[Better Data Structures]
+    D --> F[Optimized Solution]
+    E --> F
+    
 ## Naive Approach (Inefficient)
 
 The naive approach checks all numbers from `2` to `num-1`, making it inefficient for large numbers.
