@@ -24,6 +24,7 @@ Each solution includes:
 - Performance comparisons
 - Clear guidelines for when to use each approach
 
+```mermaid
 graph TD
     A[Problem] --> B[Brute Force Solution]
     A --> C[Find Optimizations]
