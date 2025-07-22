@@ -62,6 +62,8 @@ print("Before Sorting:", arr)
 quickSort(arr, 0, len(arr) - 1)
 print("After Sorting:", arr)
 
+```
+
 ## Time Complexity Analysis
 
 Quick Sort has a **best-case and average-case time complexity of O(n log n)**, but a **worst-case of O(n²)** when the pivot selection is poor (e.g., always the smallest or largest element).
